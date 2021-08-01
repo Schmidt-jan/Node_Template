@@ -1,11 +1,13 @@
-# Ticket-API
-This can also get used as a template for creating API's with Typescript.\
-Swagger as unit tests with mocha and chai are included.
+# Node Template
+This is a template for creating Web-API's with Typescript. Express and Swagger. Also the packages for unit testing are included. Therefore are [mocha](https://mochajs.org/) and [chai](https://www.chaijs.com/) used\
+The swagger documentation is available at: http://localhost:4000/docs
+The documentation is written with the yaml-based OpenApi-standard
 
 ## Installation
-
-Download all required packages
+Clone the project ann install all required packages
 ```
+git clone https://github.com/Schmidt-jan/Node_Template.git
+cd Node_Template
 npm install
 ```
 Run the server and swagger documentation:
