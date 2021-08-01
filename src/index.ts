@@ -4,9 +4,9 @@ import swaggerJSDoc from "swagger-jsdoc"
 import swaggerUI from "swagger-ui-express"
 import ticket_routes from "./routes/ticket_routes";
 
-const port: number = 4000
+const port = process.env.PORT || 4000
 const app = express()
-
+app.set("port", port)
 app.use(morgan("dev"))
 
 const swagger_options = {
@@ -36,3 +36,5 @@ app.use("/tickets", ticket_routes)
 app.listen(port, () => {
     console.log(`Server started at http://localhost:${port}`)
 })
+
+export default app

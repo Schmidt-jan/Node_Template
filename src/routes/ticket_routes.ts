@@ -40,7 +40,8 @@ const ticket_router = express.Router();
  *               items:
  *                 $ref: '#/components/schemas/Ticket'
  */
-ticket_router.get("/", (req, res) => {
+ticket_router.get("", (req, res) => {
+    console.log('called')
     res.send("No data stored")
 })
 
